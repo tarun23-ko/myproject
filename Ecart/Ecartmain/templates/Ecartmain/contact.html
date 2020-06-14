@@ -1,0 +1,36 @@
+{% extends 'Ecartmain/basic.html' %}
+{% block title %}contact= page{% endblock  %}
+{% block body %}
+<div class="container my-5">
+    <h1>Contact Us</h1>
+
+    <form method="post" action="/shop/contact/">
+        {% csrf_token %}
+  <div class="form-group">
+    <label for="exampleInputEmail1"><h4>Name</h4></label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your full name" name="name">
+
+  </div>
+  <div class="form-group">
+    <label for="Email"><h4>Email</h4></label>
+    <input type="text" class="form-control" id="Email" placeholder="Enter Your Email" name="email">
+  </div>
+        <div class="form-group">
+    <label for="Phone"><h4>Phone</h4></label>
+    <input type="text" class="form-control" id="Phone" placeholder="mobile" name="phone">
+  </div>
+         <div class="form-group">
+    <label for="inputPassword2" ><h4>Ecart_ID</h4></label>
+    <input type="text" class="form-control" id="inputPassword2" placeholder="ID-from profile" maxlength="20" style="width:20rem;" name="E_id">
+  </div>
+          <div class="form-group">
+              <label for="exampleFormControlTextarea1"><h4>Qurey</h4></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="9" placeholder="SAY:Regarding Your Query" name="Query"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+{% endblock  %}

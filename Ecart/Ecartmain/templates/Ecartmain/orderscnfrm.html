@@ -1,0 +1,28 @@
+{% extends 'Ecartmain/basic.html' %}
+{% block title %}orders confirm{% endblock  %}
+{% block body %}
+   <h1 style="text-align: center;">
+            Thanks! {{ name1|slice:"0:6" }}
+        <h6 style="text-align:center;">Your order id is: {{ id }}</h6>.
+       <h6 style="text-align:center; color:green">A confirmation Email hasbeen sent to you!</h6>
+
+       <h3 style="text-align:center">You can track your order: using order id in our website thanks good day</h3>
+        </h1>
+        <div class="container" style=" height: 700px;display: flex; align-items: center; justify-content: center;">
+
+            <div class="id" style="height: 400px; width: 500px; display: flex; align-items: center;justify-content: center;">
+
+                <h2>
+                    Your Order Hasbeen Placed
+
+                </h2>
+
+
+            </div>
+
+
+
+
+
+        </div>
+{% endblock  %}
